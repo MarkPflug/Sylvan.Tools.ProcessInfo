@@ -1,0 +1,13 @@
+{
+  "profiles": {
+    "Sylvan.Tools.ProcessInfo": {
+      "commandName": "Project",
+      "commandLineArgs": "./data-convert.exe in.xlsx cs.csv",
+      //"commandLineArgs": "xlsx-csv-rust.exe in.xlsx",
+      //"commandLineArgs": ".\\x2cgo.exe -o go.csv in.xlsx ",
+      //"commandLineArgs": "./xlsx2csv.exe /data/excel/1000000_sales_records.xlsx ./dump2.csv",
+      //"workingDirectory": "C:\\Users\\Mark\\source\\ExcelAOT\\ExcelAOT\\bin\\Release\\net8.0\\win-x64\\native"
+      "workingDirectory": "c:\\data\\"
+    }
+  }
+}

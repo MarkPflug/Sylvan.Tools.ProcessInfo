@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>Exe</OutputType>
+		<TargetFramework>net6.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<PackAsTool>true</PackAsTool>
+
+		<ToolCommandName>procinfo</ToolCommandName>
+
+		<VersionPrefix>0.1.0</VersionPrefix>
+		
+		<Title>Sylvan process information tool</Title>
+		<Description>A .NET global tool that outputs process resource usage.</Description>
+		<PackageTags>process;procinfo;dotnet;tool</PackageTags>
+		
+	</PropertyGroup>
+
+</Project>
