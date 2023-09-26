@@ -1,5 +1,6 @@
 <Project>
   <PropertyGroup>
+		
     <OutputPath>$(MSBuildThisFileDirectory)bin\$(Configuration)</OutputPath>
     <PackageOutputPath>$(MSBuildThisFileDirectory)packages\</PackageOutputPath>
     <Owner>Mark Pflug</Owner>
@@ -13,7 +14,7 @@
     <WarningsNotAsErrors>CS1030;CA1835;$(WarningsNotAsErrors)</WarningsNotAsErrors>
 
     <DisableImplicitNamespaceImports>true</DisableImplicitNamespaceImports>
-    <PackageProjectUrl>https://github.com/MarkPflug/Sylvan</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/MarkPflug/Sylvan.Tools.ProcessInfo</PackageProjectUrl>
 
     <ContinuousIntegrationBuild Condition="$(Configuration) == 'Release'">true</ContinuousIntegrationBuild>
     <EmbedAllSources>true</EmbedAllSources>
@@ -22,13 +23,13 @@
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
 
-	<ProjectReadmeFile>$(MSBuildProjectDirectory)/PackageReadme.md</ProjectReadmeFile>
+	<ProjectReadmeFile>$(MSBuildThisFileDirectory)/readme.md</ProjectReadmeFile>
 	<PackageReadmeFile
 		Condition="Exists($(ProjectReadmeFile))">readme.md</PackageReadmeFile>
     
-    
     <IsTestProject Condition="$(MSBuildProjectName.EndsWith('.Tests')) == 'true'">true</IsTestProject>
   </PropertyGroup>
+	
   <ItemGroup>
     <None Include="$(MSBuildThisFileDirectory)license.txt" Pack="true" PackagePath="">
       <Visible>false</Visible>
